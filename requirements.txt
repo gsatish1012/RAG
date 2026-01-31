@@ -1,0 +1,9 @@
+pathlib
+typing
+langchain_community
+langchain
+numpy
+langchain_groq
+pickle
+faiss
+sentence_transformers
