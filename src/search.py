@@ -37,7 +37,7 @@ class RAGSearch:
             if results and min(distances) <= 1.2:  # Relevant locally
                 texts = [r["metadata"].get("text", "") for r in results if r["metadata"]]
                 local_contexts.append("\n\n".join(texts))
-            else:  # Not relevant, add to web search
+            else:  # Not relevant,so add to web search
                 web_queries.append(sub_query)
         
         context = "\n\n".join(local_contexts)
